@@ -10,10 +10,10 @@ In order to initialize a list of items to allow for collapsing/expanding functio
 
 ### JavaSript:
 ```javascript
-let setCollapseItems = new CollapseableItems(options);
-setCollapseItems.init({
+let setCollapseItems = new CollapseableItems({
     amount: 3
 });
+setCollapseItems.init();
 ```
 ### Html:
 ```html
@@ -49,7 +49,7 @@ type: `Boolean`
 
 Default: `false`
 
-Determines wether the amount of items visible on screen while a list is collapsed should be given by the plugin or by the DOM, this allows for seperate amounts visible per list. This option works in coalition with "amountAttribute" and will overwrite 'amount' when set to true.
+Determines wether the amount of items visible items on screen while a list is collapsed is based on the "amountAttribute's" value.
 
 ---
 
@@ -63,11 +63,31 @@ The name of the attribute the plugin should use to extract a number value from t
 ---
 
 ### expandedOnLoad
+type: `Boolean`
+
+Default: `false`
+
+Determines wether all the lists should be expanded or collapsed on load
+
+---
 
 ### expandedOnLoadFromDOM
+type: `Boolean`
+
+Default: `false`
+
+Determines wether a list should be expanded or collapsed on load based on the "expandedOnLoadAttribute" value. When set to true, this option will overwrite "expandedOnLoad"
+
+---
 
 ### expandedOnLoadAttribute
+type: `String`
 
+Default: `data-expanded`
+
+The name of the attribute the plugin should use to extract a boolean value from the DOM to determine wether a list should be expanded or collapsed on load. This attribute must be placed on the element with the group selector (see below "group.selector"). If for some reason the given value's type is anything other than a Boolean, the plugin will fall back to a value of false for this specific list. 
+
+---
 
 ### group.selector
 
