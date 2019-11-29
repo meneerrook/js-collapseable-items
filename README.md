@@ -31,8 +31,9 @@ setCollapseItems.init();
 For this plugin, there are some possibilities that may come in handy, for instance; you could choose to have the amount of visible items while collapsed the same for each group, or you could have the DOM decide each list's amount of visible items seperately by passing a particular attribute to the list's wrapper, Also, you could create your own toggler button or you could let the plugin create one for you and let it place the toggler right below the list as a sibling. Below a full list of all the options available.
 
 #### amount
-Type: ```Number```
-Default: ```5```
+Type: `Number`
+
+Default: `5`
 
 ---
 
