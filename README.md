@@ -141,6 +141,8 @@ Default: `false`
 
 Determines wether the plugin should create a toggler for you and place it right after the list element as a sibling
 
+---
+
 ### toggler.attributes
 type: `Object`
 
