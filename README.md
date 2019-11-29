@@ -2,7 +2,7 @@
 
 ## Intro
 
-This plugin lets you collapse/expand a list of items based on the height and amount of the items themselves. You can, for instance; have multiple lists on one page and initialize them all at once, have a seperate amount of visible items while collapsed per list, make use of css's cubic-bezier transition property because the height of the list is determined by the amount of items and the height of each of these items seperately, and more. For all the possibilities regarding the api, scroll down below.
+This plugin lets you collapse/expand a list of items based on the height and amount of the items themselves. You can, for instance; have multiple lists on one page and initialize them all at once, have a seperate amount of visible items while collapsed per list, make use of css's cubic-bezier transition property because the height of the list is determined by the amount of items and the height of each of these items seperately, and more. For a detailed list of all the options, scroll down below.
 
 ## Usage
 
@@ -27,39 +27,38 @@ setCollapseItems.init();
 </div>
 ```
 
-## API
+## Options
 For this plugin, there are some possibilities that may come in handy, for instance; you could choose to have the amount of visible items while collapsed the same for each group, or you could have the DOM decide each list's amount of visible items seperately by passing a particular attribute to the list's wrapper, Also, you could create your own toggler button or you could let the plugin create one for you and let it place the toggler right below the list as a sibling. Below a full list of all the options available.
 
-### options.amount
+#### amount
+Type: ```Number```
+Default: ```5```
+------
+#### amountFromDOM
+------
+#### amountAttribute
+------
+#### expandedOnLoad
 
-### options.amountFromDOM
+#### expandedOnLoadFromDOM
 
-### options.amountAttribute
+#### expandedOnLoadAttribute
 
-### options.expandedOnLoad
 
-### options.expandedOnLoadFromDOM
+#### group.selector
 
-### options.expandedOnLoadAttribute
+#### group.expandedClass
 
-### options.group
 
-#### options.group.selector
+#### list.selector
 
-#### options.group.expandedClass
+#### item
 
-### options.list
+#### item.selector
 
-#### options.list.selector
 
-### options.item
+#### toggler.selector
 
-#### options.item.selector
+#### toggler.create
 
-### options.toggler
-
-#### options.toggler.selector
-
-#### options.toggler.create
-
-#### options.toggler.attributes
+#### toggler.attributes
