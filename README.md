@@ -33,11 +33,12 @@ For this plugin, there are some possibilities that may come in handy, for instan
 #### amount
 Type: ```Number```
 Default: ```5```
-------
+
+=====
 #### amountFromDOM
-------
+=====
 #### amountAttribute
-------
+=====
 #### expandedOnLoad
 
 #### expandedOnLoadFromDOM
