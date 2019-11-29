@@ -146,10 +146,12 @@ type: `Object`
 
 Default:
 ```
-'href': '#',
-'data-more': 'Show more',
-'data-less': 'Show less',
-'class': 'toggle-items'
+toggler: {
+    'href': '#',
+    'data-more': 'Show more',
+    'data-less': 'Show less',
+    'class': 'toggle-items'
+}
 ```
 
 An Object of properties with attributes that the plugin should add to the toggler element when "toggler.create" is set to true, bear in mind; The plugin will always create an anchor tag so the "href" attribute is advised to avoid unexpected behaviour, also, the "class" element should always be given and should always be the same as the "toggler.selector" value (except for the selector type, so ".toggle- item" should be "toggle-items" for the class attributes value)
