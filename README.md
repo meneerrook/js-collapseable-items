@@ -90,19 +90,66 @@ The name of the attribute the plugin should use to extract a boolean value from 
 ---
 
 ### group.selector
+type: `String`
+
+Default: `.group`
+
+The (css) selector of the group element, for reference; see html snippet above.
+
+---
 
 ### group.expandedClass
+type: `string`
 
+Default: `expanded`
+
+The class the plugin should toggle on the group element when expanded and collapsing the list, this allows for css transitions.
+
+---
 
 ### list.selector
+type: `string`
 
-### item
+Default: `.list`
+
+The (css) selector of the list element, for reference; see html snippet above.
+
+---
 
 ### item.selector
+type: `string`
 
+Default: `.item`
+
+The (css) selector of the item element, for reference; see html snippet above.
+
+---
 
 ### toggler.selector
+type: `String`
+
+Default: `.toggle-items`
+
+The (css) selector of the toggle element, for reference; see html snippet above.
+
+---
 
 ### toggler.create
+type: `Boolean`
+
+Default: `false`
+
+Determines wether the plugin should create a toggler for you and place it right after the list element as a sibling
 
 ### toggler.attributes
+type: 'Object'
+
+Default:
+```javascript
+'href': '#',
+'data-more': 'Show more',
+'data-less': 'Show less',
+'class': 'toggle-items'
+```
+
+An Object of properties with attributes that the plugin should add to the toggler element when "toggler.create" is set to true, bear in mind; The plugin will always create an anchor tag so the "href" attribute is advised to avoid unexpected behaviour, also, the "class" element should always be given and should always be the same as the "toggler.selector" value (except for the selector type, so ".toggle- item" should be "toggle-items" for the class attributes value)
