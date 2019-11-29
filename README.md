@@ -6,6 +6,22 @@ This plugin lets you collapse/expand a list of items based on the height and amo
 
 ## Usage
 
-In order to initialize a list of items to allow for collapsing/expanding functionality you would have to run the following JS code on page-load (Bear in mind, the plugin uses ES6 standard and syntax, some browsers may not support this for which you would need to use a polyfill)
+In order to initialize a list of items to allow for collapsing/expanding functionality you would have to run the following JS code on page-load (Bear in mind, the plugin uses ES6 standards and syntax, some browsers may not support this yet for which you would need to use a polyfill).
 
-Init.js:
+### JavaSript:
+```javascript
+let setCollapseItems = new CollapseableItems(options);
+setCollapseItems.init();
+```
+### Html:
+```html
+<div class="group">
+    <ul class="list">
+        <li class="item">item 1</li>
+        <li class="item">item 2</li>
+        <li class="item">item 3</li>
+        <li class="item">And so on..</li>
+        <li class="item">And so forth...</li>
+    </ul>
+</div>
+```
