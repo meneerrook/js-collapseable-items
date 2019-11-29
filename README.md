@@ -35,11 +35,17 @@ Type: `Number`
 
 Default: `5`
 
-The number of items visible on screen while a list is collapsed. This option is ignored when the option 'amountFromDOM' is set to `true`
+The number of items visible on screen while a list is collapsed. This option is ignored when the option "amountFromDOM" is set to 'true'
 
 ---
 
 #### amountFromDOM
+
+type: `Boolean`
+
+Default: `false`
+
+Determines wether the amount of items visible on screen while a list is collapsed should be given by the plugin or by the DOM, this allows for seperate amounts visible per list. This option works in coalition with "amountAttribute" and will overwrite 'amount' when set to true.
 
 ---
 
