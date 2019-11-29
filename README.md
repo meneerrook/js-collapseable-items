@@ -23,5 +23,43 @@ setCollapseItems.init();
         <li class="item">And so on..</li>
         <li class="item">And so forth...</li>
     </ul>
+    <a href="#" class="toggle-items"></a>
 </div>
 ```
+
+## API
+For this plugin, there are some possibilities that may come in handy, for instance; you could choose to have the amount of visible items while collapsed the same for each group, or you could have the DOM decide each list's amount of visible items seperately by passing a particular attribute to the list's wrapper, Also, you could create your own toggler button or you could let the plugin create one for you and let it place the toggler right below the list as a sibling. Below a full list of all the options available.
+
+### options.amount
+
+### options.amountFromDOM
+
+### options.amountAttribute
+
+### options.expandedOnLoad
+
+### options.expandedOnLoadFromDOM
+
+### options.expandedOnLoadAttribute
+
+### options.group
+
+#### options.group.selector
+
+#### options.group.expandedClass
+
+### options.list
+
+#### options.list.selector
+
+### options.item
+
+#### options.item.selector
+
+### options.toggler
+
+#### options.toggler.selector
+
+#### options.toggler.create
+
+#### options.toggler.attributes
