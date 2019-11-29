@@ -11,7 +11,9 @@ In order to initialize a list of items to allow for collapsing/expanding functio
 ### JavaSript:
 ```javascript
 let setCollapseItems = new CollapseableItems(options);
-setCollapseItems.init();
+setCollapseItems.init({
+    amount: 3
+});
 ```
 ### Html:
 ```html
@@ -30,7 +32,10 @@ setCollapseItems.init();
 ## Options
 For this plugin, there are some possibilities that may come in handy, for instance; you could choose to have the amount of visible items while collapsed the same for each group, or you could have the DOM decide each list's amount of visible items seperately by passing a particular attribute to the list's wrapper, Also, you could create your own toggler button or you could let the plugin create one for you and let it place the toggler right below the list as a sibling. Below a full list of all the options available.
 
-#### amount
+
+---
+
+### amount
 Type: `Number`
 
 Default: `5`
@@ -39,8 +44,7 @@ The number of items visible on screen while a list is collapsed. This option is 
 
 ---
 
-#### amountFromDOM
-
+### amountFromDOM
 type: `Boolean`
 
 Default: `false`
@@ -49,31 +53,36 @@ Determines wether the amount of items visible on screen while a list is collapse
 
 ---
 
-#### amountAttribute
+### amountAttribute
+type: `String`
+
+Default: `data-amount`
+
+The name of the attribute the plugin should use to extract a number value from the DOM for the amount of visible items per list. This attribute must be placed on the element with the group selector (see below "group.selector"). If for some reason the value given is any other type but a number, the plugin will fall back on the "amount" option for this specific list.
 
 ---
 
-#### expandedOnLoad
+### expandedOnLoad
 
-#### expandedOnLoadFromDOM
+### expandedOnLoadFromDOM
 
-#### expandedOnLoadAttribute
-
-
-#### group.selector
-
-#### group.expandedClass
+### expandedOnLoadAttribute
 
 
-#### list.selector
+### group.selector
 
-#### item
-
-#### item.selector
+### group.expandedClass
 
 
-#### toggler.selector
+### list.selector
 
-#### toggler.create
+### item
 
-#### toggler.attributes
+### item.selector
+
+
+### toggler.selector
+
+### toggler.create
+
+### toggler.attributes
