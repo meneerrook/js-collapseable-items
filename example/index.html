@@ -1,0 +1,138 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Collapseable items</title>
+
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <script src="collapseableItems.min.js"></script>
+    </head>
+    <body>
+        <section class="container">
+            
+            <aside class="sidecol">
+                <h2 class="sidecol__header">Filters</h2>
+                <div class="sidecol__filters">
+
+                    <div class="filter__group" data-collapsed-amount="2" data-expanded="true">
+                        <h3 class="filter__header">Categories</h3>
+                        <ul class="filter__list">
+                            <li class="filter__item"><a class="filter__anchor" href="#">Blouses</a></li>
+                            <li class="filter__item"><a class="filter__anchor" href="#">Shirts</a></li>
+                            <li class="filter__item"><a class="filter__anchor" href="#">Suits</a></li>
+                            <li class="filter__item"><a class="filter__anchor" href="#">Pants</a></li>
+                            <li class="filter__item"><a class="filter__anchor" href="#">Jackets</a></li>
+                            <li class="filter__item"><a class="filter__anchor" href="#">Sweaters</a></li>
+                            <li class="filter__item"><a class="filter__anchor" href="#">Jerseys</a></li>
+                            <li class="filter__item"><a class="filter__anchor" href="#">Shoes</a></li>
+                            <li class="filter__item"><a class="filter__anchor" href="#">Accessories</a></li>
+                        </ul>
+                        <a href="#" class="filter__toggler" data-more="Show more" data-less="Show less"></a>
+                    </div>
+                    <div class="filter__group" data-collapsed-amount="2" data-expanded="false">
+                        <h3 class="filter__header">Brands</h3>
+                        <ul class="filter__list">
+                            <li class="filter__item"><label class="filter__label"><input type="checkbox"> G-star</label></li>
+                            <li class="filter__item"><label class="filter__label"><input type="checkbox"> Only & Sons</label></li>
+                            <li class="filter__item"><label class="filter__label"><input type="checkbox"> Nike</label></li>
+                            <li class="filter__item"><label class="filter__label"><input type="checkbox"> Petrol industries</label></li>
+                            <li class="filter__item"><label class="filter__label"><input type="checkbox"> Airforce one</label></li>
+                            <li class="filter__item"><label class="filter__label"><input type="checkbox"> Lacoste</label></li>
+                            <li class="filter__item"><label class="filter__label"><input type="checkbox"> Napapijri</label></li>
+                            <li class="filter__item"><label class="filter__label"><input type="checkbox"> Replay</label></li>
+                        </ul>
+                        <a href="#" class="filter__toggler" data-more="Show more" data-less="Show less"></a>
+                    </div>
+                    <div class="filter__group" data-collapsed-amount="2" data-expanded="false">
+                        <h3 class="filter__header">Sizes</h3>
+                        <ul class="filter__list">
+                            <li class="filter__item"><label class="filter__label"><input type="checkbox"> 30</label></li>
+                            <li class="filter__item"><label class="filter__label"><input type="checkbox"> 32</label></li>
+                            <li class="filter__item"><label class="filter__label"><input type="checkbox"> 34</label></li>
+                            <li class="filter__item"><label class="filter__label"><input type="checkbox"> 36</label></li>
+                            <li class="filter__item"><label class="filter__label"><input type="checkbox"> 38</label></li>
+                            <li class="filter__item"><label class="filter__label"><input type="checkbox"> 40</label></li>
+                            <li class="filter__item"><label class="filter__label"><input type="checkbox"> 42</label></li>
+                            <li class="filter__item"><label class="filter__label"><input type="checkbox"> 44</label></li>
+                            <li class="filter__item"><label class="filter__label"><input type="checkbox"> 46</label></li>
+                            <li class="filter__item"><label class="filter__label"><input type="checkbox"> 48</label></li>
+                        </ul>
+                        <a href="#" class="filter__toggler" data-more="Show more" data-less="Show less"></a>
+                    </div>
+                    <div class="filter__group" data-collapsed-amount="2" data-expanded="false">
+                        <h3 class="filter__header">Colors</h3>
+                        <ul class="filter__list">
+                            <li class="filter__item"><label class="filter__label"><input type="checkbox"> White</label></li>
+                            <li class="filter__item"><label class="filter__label"><input type="checkbox"> Black</label></li>
+                            <li class="filter__item"><label class="filter__label"><input type="checkbox"> Grey</label></li>
+                            <li class="filter__item"><label class="filter__label"><input type="checkbox"> Brown</label></li>
+                            <li class="filter__item"><label class="filter__label"><input type="checkbox"> Green</label></li>
+                            <li class="filter__item"><label class="filter__label"><input type="checkbox"> Pink</label></li>
+                            <li class="filter__item"><label class="filter__label"><input type="checkbox"> Red</label></li>
+                            <li class="filter__item"><label class="filter__label"><input type="checkbox"> Purple</label></li>
+                            <li class="filter__item"><label class="filter__label"><input type="checkbox"> Yellow</label></li>
+                            <li class="filter__item"><label class="filter__label"><input type="checkbox"> Orange</label></li>
+                            <li class="filter__item"><label class="filter__label"><input type="checkbox"> Multi-color</label></li>
+                        </ul>
+                        <a href="#" class="filter__toggler" data-more="Show more" data-less="Show less"></a>
+                    </div>
+                </div>
+            </aside>
+
+            <div class="content">
+                <header class="content__top">
+                    <h1 class="content__header">Collection</h1>
+                    <div class="content__config">
+                        <div class="config__amount">
+                            <p>Amount of products: <b>281</b></p>
+                        </div>
+                        <div class="config__sort">
+                            <div class="sort__wrapper">
+                                <label>Amount per page</label>
+                                <select>
+                                    <option>12</option>
+                                    <option>24</option>
+                                    <option>36</option>
+                                    <option>48</option>
+                                </select>
+                            </div>
+                            <div class="sort__wrapper">
+                                <label>Sort by</label>
+                                <select>
+                                    <option>Newest</option>
+                                    <option>Sale</option>
+                                    <option>Price low to high</option>
+                                    <option>Price high to low</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <section id="product-list" class="product__list">
+
+                    <template id="product-item-template">
+                        <article class="product__item">
+                            <div class="product__inner">
+                                <div class="product__media">
+                                    <a href="#"><img class="product__image" src="product.jpg" alt="product"/></a>
+                                </div>
+                                <div class="product__content">
+                                    <hgroup>
+                                        <h3 class="product__title"><a href="#">Title</a></h3>
+                                        <h4 class="product__brand"><a href="#">Brand</a></h4>
+                                        <h4 class="product__price"><a href="#">€100,-</a></h4>
+                                    </hgroup>
+                                    <p class="product__teaser"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
+                                </div>
+                            </div>
+                        </article>
+                    </template>
+                    
+                </section>
+            </div>
+        </section>
+
+        <script src="init.js"></script>
+    </body>
+</html>
