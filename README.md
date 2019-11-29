@@ -35,6 +35,8 @@ Type: `Number`
 
 Default: `5`
 
+The number of items visible on screen while a list is collapsed. This option is ignored when the option 'amountFromDOM' is set to `true`
+
 ---
 
 #### amountFromDOM
