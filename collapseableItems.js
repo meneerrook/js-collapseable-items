@@ -32,7 +32,7 @@ const _ci = {
             if (typeof customOptions[prop] == 'object') {
                 _ci.extend(options[prop], customOptions[prop]);
             } else {
-                if (prop.length > 0) options[prop] = customOptions[prop];
+                if (customOptions[prop].length > 0) options[prop] = customOptions[prop];
             }
         }
         
