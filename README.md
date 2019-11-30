@@ -148,7 +148,7 @@ type: `Object`
 
 Default:
 ```
-toggler: {
+attributes: {
     'href': '#',
     'data-more': 'Show more',
     'data-less': 'Show less',
